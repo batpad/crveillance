@@ -23,9 +23,9 @@ if len(sys.argv) != 3:
 source_dir = sys.argv[1]
 dest_dir = sys.argv[2]
 
-glob_path = os.path.join(source_dir, '*.dav')
+glob_path = os.path.join(source_dir, '**/*.dav')
 
-for dav in glob.glob(glob_path):
+for dav in glob.glob(glob_path, recursive=True):
     filename = os.path.basename(dav)
     filename_parts = filename.split('_')
 
