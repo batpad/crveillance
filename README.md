@@ -1,5 +1,7 @@
 Scripts and utilities to take a bunch of DAV files and convert them using ffmpeg and organize them into folders based on timestamp.
 
+Requires: Python 3.5+
+
 ### dav_to_mp4.py
 
 Usage: python dav_to_mp4.py <source_folder> <dest_folder>
